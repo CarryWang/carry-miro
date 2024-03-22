@@ -50,6 +50,8 @@ export const Actions = ({
     mutateRemove({ id })
       .then(() => toast.success("Doard deleted"))
       .catch(() => toast.error("Failed to delete board"));
+
+      // TODO: when delete board in the board cavas page, should redirect to hoe page 
   };
 
   const onUpdate = (id: string, title: string) => {
