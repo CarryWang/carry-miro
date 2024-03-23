@@ -38,7 +38,7 @@ export const Info = ({ boardId }: InfoProps) => {
     <div className="a absolute top-2 left-2 bg-white rounded-md px-1.5 h-12 flex items-center shadow-md">
       <Hint label="Back to boards" side="bottom" sideOffset={10}>
         <Button asChild variant="ghost">
-          <Link href="/" className="px-0">
+          <Link href="/" style={{ padding: 0 }}>
             <Image src="/logo.svg" alt="Board logo" height={40} width={100} />
           </Link>
         </Button>
