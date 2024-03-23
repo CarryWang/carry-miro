@@ -1,5 +1,6 @@
 // import { List } from "./list";
 // import { NewButton } from "./new-button";
+"use client";
 
 export const Sidebar = () => {
   return (
