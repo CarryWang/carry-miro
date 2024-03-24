@@ -13,7 +13,7 @@ This is a repository for a Build a Real-Time Miro Clone With Nextjs, React, Tail
 - UI Components : [shadcn/ui](https://ui.shadcn.com/)
 - Backend & Database : [Convex](https://www.convex.dev/)
 - Authentication & User Management : [Clerk](https://clerk.com/)
-- Real-Time Collaboration : [Liveblocks](https://liveblocks.io/) 
+- Real-Time Collaboration : [Liveblocks](https://liveblocks.io/)
 
 ## Features:
 
