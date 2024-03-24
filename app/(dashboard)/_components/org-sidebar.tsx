@@ -19,7 +19,7 @@ export const OrgSidebar = () => {
   const favorites = searchParams.get("favorites");
 
   return (
-    <div className="hidden lg:flex flex-col space-y-6 w-[206px] pl-5 pt-5">
+    <div className="hidden lg:flex flex-col space-y-6 w-[206px] p-5 bg-muted">
       <Link href="/">
         <div className="flex items-center gap-x-2">
           <Image src="/logo.svg" alt="logo" height={60} width={186} />
@@ -51,7 +51,7 @@ export const OrgSidebar = () => {
       />
       <div className="space-y-1 w-full">
         <Button
-          variant={favorites ? "ghost" : "secondary"}
+          variant={favorites ? "secondary" : "boardActive"}
           asChild
           size="lg"
           className="font-normal justify-start px-2 w-full"
@@ -62,7 +62,7 @@ export const OrgSidebar = () => {
           </Link>
         </Button>
         <Button
-          variant={favorites ? "secondary" : "ghost"}
+          variant={favorites ? "boardActive" : "secondary"}
           asChild
           size="lg"
           className="font-normal justify-start px-2 w-full"

@@ -24,9 +24,9 @@ export const BoardList = ({ orgId, query }: BoardlistProps) => {
   if (data === undefined) {
     return (
       <div className="h-full">
-        <h2 className="text-3xl">
+        {/* <h2 className="text-3xl">
           {query.favorites ? "Favorite boards" : "Team boards"}
-        </h2>
+        </h2> */}
         <div className="flex justify-center items-center h-full">
           <Image
             src="/logo.svg"
