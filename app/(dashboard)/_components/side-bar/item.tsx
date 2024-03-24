@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 import { useOrganization, useOrganizationList } from "@clerk/nextjs";
 
 import { cn } from "@/lib/utils";
@@ -34,7 +33,7 @@ export const Item = ({ id, name, imageUrl }: ItemProps) => {
           src={imageUrl}
           onClick={onClick}
           className={cn(
-            "rounded-md cursor-pointer opacity-30 hover:opacity-90 transition",
+            "rounded-md cursor-pointer opacity-75 hover:opacity-100 transition",
             isActive && "opacity-100"
           )}
         />
