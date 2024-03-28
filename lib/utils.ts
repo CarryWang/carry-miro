@@ -1,8 +1,13 @@
 import { Camera, Color, Point, Side, XYWH } from "@/types/canvas";
 import { type ClassValue, clsx } from "clsx";
+import { random } from "nanoid";
 import { twMerge } from "tailwind-merge";
 
 const COLORS = ["#DC2626", "#D97706", "#059669", "#7C3AED", "#DB2777"];
+
+export function randomColor() {
+  return COLORS[Math.floor(Math.random() * 5)];
+}
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
