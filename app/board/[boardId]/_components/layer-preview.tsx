@@ -7,10 +7,10 @@ import { LayerType } from "@/types/canvas";
 import { useStorage } from "@/liveblocks.config";
 import { Rectangle } from "./rectangle";
 
-// import { Text } from "./text";
-// import { Ellipse } from "./ellipse";
+import { Text } from "./text";
+import { Ellipse } from "./ellipse";
 // import { Rectangle } from "./rectangle";
-// import { Note } from "./note";
+import { Note } from "./note";
 // import { Path } from "./path";
 
 interface LayerPreviewProps {
@@ -43,33 +43,30 @@ export const LayerPreview = memo(
         );
       case LayerType.Note:
         return (
-          <div>1</div>
-          //   <Note
-          //     id={id}
-          //     layer={layer}
-          //     onPointerDown={onLayerPointerDown}
-          //     selectionColor={selectionColor}
-          //   />
+          <Note
+            id={id}
+            layer={layer}
+            onPointerDown={onLayerPointerDown}
+            selectionColor={selectionColor}
+          />
         );
       case LayerType.Text:
         return (
-          <div>1</div>
-          //   <Text
-          //     id={id}
-          //     layer={layer}
-          //     onPointerDown={onLayerPointerDown}
-          //     selectionColor={selectionColor}
-          //   />
+          <Text
+            id={id}
+            layer={layer}
+            onPointerDown={onLayerPointerDown}
+            selectionColor={selectionColor}
+          />
         );
       case LayerType.Ellipse:
         return (
-          <div>1</div>
-          //   <Ellipse
-          //     id={id}
-          //     layer={layer}
-          //     onPointerDown={onLayerPointerDown}
-          //     selectionColor={selectionColor}
-          //   />
+          <Ellipse
+            id={id}
+            layer={layer}
+            onPointerDown={onLayerPointerDown}
+            selectionColor={selectionColor}
+          />
         );
       case LayerType.Rectangle:
         return (

@@ -38,7 +38,7 @@ import {
 import { LiveObject } from "@liveblocks/client";
 import { LayerPreview } from "./layer-preview";
 import { SelectionBox } from "./selection-box";
-import { SelectionTools } from "@/app/(dashboard)/_components/selection-tools";
+import { SelectionTools } from "@/app/board/[boardId]/_components/selection-tools";
 
 interface CanvasProps {
   boardId: string;
