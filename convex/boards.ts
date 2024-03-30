@@ -21,8 +21,6 @@ export const get = query({
   handler: async (ctx, args) => {
     const identity = await checkIdentity(ctx);
 
-    console.log(args.favorites, args.search);
-
     // favorites search ============================
     if (args.favorites) {
       const favoritedBoards = await ctx.db

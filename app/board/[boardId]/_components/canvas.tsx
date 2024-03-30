@@ -382,7 +382,6 @@ export const Canvas = ({ boardId }: CanvasProps) => {
 
   const layerIdsToColorSelection = useMemo(() => {
     const layerIdsToColorSelection: Record<string, string> = {};
-    console.log(selections, "selections!!!");
 
     for (const user of selections) {
       const [connectionId, selection] = user;
